@@ -182,7 +182,7 @@
   margin-right: 10px;
 }
 
-.timeline ul li div .scientist {}
+/* .timeline ul li div .scientist {} */
 
 .timeline ul li:nth-of-type(odd) > div {
   left: 45px;
@@ -413,6 +413,33 @@
   height: 150px;
   content: "";
   background: linear-gradient(to right,rgb(124, 255, 110),rgb(195, 255, 200));
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
+}
+
+/* Blue */
+.cookieCard-blue {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(to right,rgb(9, 0, 189),rgb(16, 0, 120));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cookieCard-blue::before {
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right,rgb(110, 117, 255),rgb(195, 203, 255));
   position: absolute;
   z-index: 1;
   border-radius: 50%;
