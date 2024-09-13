@@ -83,7 +83,7 @@
   }
 
   .layer{
-    background: radial-gradient(#00000081, #000000);
+    background: radial-gradient(#00000081, #000000d6);
     height: 85vh;
     position: absolute;
     z-index: 5;
@@ -102,12 +102,23 @@
 
 .t_body {
   font: normal 16px/1.5 'Titillium Web', sans-serif;
-  background: radial-gradient(closest-side, #12c42a, #b5ff7c, #000000);
+  /* background: radial-gradient(closest-side, #12c42a, #b5ff7c, #000000); */
+  background-image: url(./assets/hard-skill.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
   color: #3c3f64;
   overflow-x: hidden;
   padding-bottom: 50px;
 }
+.hard_skill_overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(#0000008f, #0000007d);
 
+}
 /* STYLING */
 .timeline ul li {
   list-style-type: none;
@@ -273,77 +284,138 @@
 
 .t_hard_skills{
   margin: 2rem 0;
-  font-size: 4rem;
-  color: #fff;
-  text-decoration: underline;
-  text-align: center;
-}
-
-.soft_skills {
-  background: radial-gradient(closest-side, rgb(18, 196, 42), #b5ff7c, #000000);
-  display: grid;
-  grid-template-columns: repeat(1fr,1fr);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-
-/* From Uiverse.io by ahmedyasserdev */ 
-.unique-card {
   position: relative;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+  z-index: 100;
+}
+
+.soft-skill-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+
+.t-soft-skill-body{
+  background-image: url(./assets/soft-skill.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.soft_skill_overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(#00000045, #000000);
+}
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.cookieCard {
   width: 300px;
   height: 200px;
+  background: linear-gradient(to right,rgb(137, 104, 255),rgb(175, 152, 255));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
   overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.unique-card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.card-content {
+.cookieCard::before {
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right,rgb(142, 110, 255),rgb(208, 195, 255));
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #888;
+  z-index: 1;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
+}
+
+.cookieHeading {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgb(241, 241, 241);
   z-index: 2;
-  transition: color 0.3s;
 }
 
-.unique-card:hover .card-content {
-  color: #ff7e5f;
+.cookieDescription {
+  font-size: 0.9em;
+  color: rgb(241, 241, 241);
+  z-index: 2;
 }
 
-.background-overlay {
+.cookieDescription a {
+  color: rgb(241, 241, 241);
+}
+
+
+/* RED */ 
+.cookieCard-red {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(to right,rgb(153, 0, 0),rgb(203, 0, 0));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cookieCard-red::before {
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right,rgb(255, 110, 110),rgb(255, 195, 195));
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(52, 73, 94, 0.7);
-  border-radius: 15px;
-  opacity: 0;
-  transition: opacity 0.3s;
+  z-index: 1;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
 }
 
-.unique-card:hover .background-overlay {
-  opacity: 1;
+
+
+/* Green */
+.cookieCard-green {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(to right,rgb(3, 189, 0),rgb(0, 120, 0));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-.card-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.card-description {
-  font-size: 16px;
+.cookieCard-green::before {
+  width: 150px;
+  height: 150px;
+  content: "";
+  background: linear-gradient(to right,rgb(124, 255, 110),rgb(195, 255, 200));
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
 }
