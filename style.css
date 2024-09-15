@@ -906,3 +906,117 @@ svg {
   height: 150vh;
   background-color: rgba(0, 0, 0, 0.466);
 }
+/* General styles */
+.navbar {
+  padding: 2rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.466);
+  color: white;
+  z-index: 100000000;
+}
+
+/* Logo styling */
+.logo img {
+  height: 3rem;
+  cursor: pointer;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+  transition: all 0.3s;
+}
+
+/* Hamburger active state */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Navigation links */
+.navbar ul {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.navbar ul.mobile-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar ul.mobile-menu.active {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar ul.mobile-menu .nav-items {
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar ul.mobile-menu .nav-items a {
+  width: 100%;
+  color: white;
+}
+
+.navbar ul.mobile-menu .nav-items a:hover {
+  color: #ffc3d4;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar ul.mobile-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+}

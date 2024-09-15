@@ -301,3 +301,17 @@ window.addEventListener('scroll', () => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    console.log('Hamburger clicked');  // Debugging: Check if the event is firing
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    
+    // Debugging: Check if the class was toggled
+    console.log('Hamburger class:', hamburger.classList);
+    console.log('Nav links class:', navLinks.classList);
+  });
+});
