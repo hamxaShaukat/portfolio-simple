@@ -1,0 +1,182 @@
+{
+    "navbar": {
+      "logo": "Navbar",
+      "menuItems": [
+        "Home",
+        "About",
+        "Category",
+        "Menu",
+        "Testimonial",
+        "softSkills"
+      ]
+    },
+    "heroSection": {
+      "name": "Hamza Shaukat",
+      "profession": {
+        "role": "Full Stack Web Developer",
+        "technologies": [
+          "Next js",
+          "React-js"
+        ]
+      },
+      "description": "I built website apps using Next js and React-js and I am also a front-end developer. My main focus is to stay updated with the latest technologies so that I can excel in my field.",
+      "education": "BSc. in Computer Science",
+      "buttons": {
+        "downloadCV": "Download CV",
+        "contactMe": "Contact me"
+      }
+    },
+    "hardSkills": [
+      {
+        "year": "2023",
+        "name": "Next js",
+        "proficiency": "80%",
+        "image": "./assets/next.png"
+      },
+      {
+        "year": "2023",
+        "name": "React js",
+        "proficiency": "80%",
+        "image": "./assets/react.png"
+      },
+      {
+        "year": "2023",
+        "name": "Node js",
+        "proficiency": "67%",
+        "image": "./assets/node.png"
+      },
+      {
+        "year": "2023",
+        "name": "Express js",
+        "proficiency": "57%",
+        "image": "./assets/express.png"
+      },
+      {
+        "year": "2023",
+        "name": "Prisma orm",
+        "proficiency": "77%",
+        "image": "./assets/prisma.png"
+      },
+      {
+        "year": "2023",
+        "name": "Mongo db",
+        "proficiency": "66%",
+        "image": "./assets/mongo.png"
+      },
+      {
+        "year": "2023",
+        "name": "Firebase",
+        "proficiency": "66%",
+        "image": "./assets/firebase.png"
+      },
+      {
+        "year": "2022",
+        "name": "C++",
+        "proficiency": "90%",
+        "image": "./assets/cpp.png"
+      },
+      {
+        "year": "2022",
+        "name": "Python",
+        "proficiency": "60%",
+        "image": "./assets/python.png"
+      },
+      {
+        "year": "2023",
+        "name": "Tailwind css",
+        "proficiency": "90%",
+        "image": "./assets/tcss.png"
+      },
+      {
+        "year": "2023",
+        "name": "Material ui",
+        "proficiency": "90%",
+        "image": "./assets/mui.png"
+      }
+    ],
+    "softSkills": [
+      {
+        "name": "Teamwork",
+        "description": "I excel at working collaboratively in teams, leveraging diverse perspectives to achieve common goals."
+      },
+      {
+        "name": "Adaptability",
+        "description": "I quickly adjust to changing situations and environments, maintaining productivity and a positive attitude."
+      },
+      {
+        "name": "Problem-Solving",
+        "description": "I am efficient in identifying challenges and implementing effective solutions to overcome them."
+      },
+      {
+        "name": "Time Management",
+        "description": "I prioritize tasks effectively and manage my time to meet deadlines consistently."
+      },
+      {
+        "name": "Conflict Resolution",
+        "description": "I can mediate conflicts and find mutually beneficial solutions to maintain harmony in the workplace."
+      },
+      {
+        "name": "Work Ethic",
+        "description": "I am dedicated and reliable, always striving to complete tasks to the best of my ability."
+      },
+      {
+        "name": "Active Listening",
+        "description": "I actively listen to others, ensuring I fully understand their perspectives before responding."
+      },
+      {
+        "name": "Stress Management",
+        "description": "I stay calm and composed under pressure, maintaining focus to meet challenging deadlines."
+      },
+      {
+        "name": "Collaboration",
+        "description": "I enjoy working closely with others, sharing knowledge and ideas to achieve shared goals."
+      }
+    ],
+    "videoSection": {
+      "title": "Video Presentation below",
+      "videoSource": "./assets/vid.mp4"
+    },
+    "socialPost": {
+      "profile": {
+        "name": "John Doe",
+        "picture": "./assets/profile.png",
+        "time": "2 hours ago"
+      },
+      "content": {
+        "image": "./assets/feed-bg.jpg",
+        "text": "Just had an amazing time at the beach! The sunset was breathtaking. 🌅"
+      },
+      "actions": {
+        "like": "Like",
+        "comment": "Comment",
+        "share": "Share"
+      }
+    },
+    "projects": [
+      {
+        "image": "./assets/p4.png",
+        "title": "Twitter Clone",
+        "description": "A simple clone for sharing info.",
+        "link": "https://github.com/yourusername/twitter-clone" 
+      },
+      {
+        "image": "./assets/p1.png",
+        "title": "AI Tool Directory",
+        "description": "A site where you can access many tools.",
+        "link": "https://github.com/yourusername/ai-tool-directory"
+      },
+      {
+        "image": "./assets/p2.png",
+        "title": "Metaverse",
+        "description": "A simple animated application.",
+        "link": "https://github.com/yourusername/metaverse"
+      },
+      {
+        "image": "./assets/p3.png",
+        "title": "VR Experience",
+        "description": "Simple application to promote VR.",
+        "link": "https://github.com/yourusername/vr-experience"
+      }
+    ]
+  }
+  
