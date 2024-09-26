@@ -251,3 +251,18 @@ gsap.to("#fstar", {
   },
 });
 
+document.getElementById('btn-cv').addEventListener('click', function() {
+  // Create a new link element
+  const link = document.createElement('a');
+  
+  // Set the href to the path of your resume file (ensure it's a valid file path)
+  link.href = './assets/cv.pdf';  // Replace with the actual file path
+  
+  // Set the download attribute with a default filename for the downloaded file
+  link.download = 'hamza.pdf';  // Replace with the desired file name
+  
+  // Programmatically click the link to trigger the download
+  link.click();
+});
+
+
