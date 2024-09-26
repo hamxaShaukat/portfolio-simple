@@ -266,3 +266,32 @@ document.getElementById('btn-cv').addEventListener('click', function() {
 });
 
 
+const inputs = document.querySelectorAll(".contact-input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+
+const contactButton = document.getElementById("btn-contact");
+const contactSection = document.getElementById("contact-me");
+
+contactButton.addEventListener("click", function () {
+  contactSection.scrollIntoView({
+    behavior: "smooth", // Makes the scroll smooth
+    block: "start"      // Scrolls to the top of the section
+  });
+});

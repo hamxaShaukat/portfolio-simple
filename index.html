@@ -36,10 +36,11 @@
       </label>
 
       <nav class="navbar">
-        <a href="#" class="nav-item" style="--i: 0">Home</a>
-        <a href="#" class="nav-item" style="--i: 1">Plan Your Visit</a>
-        <a href="#" class="nav-item" style="--i: 2">Magical Places</a>
-        <a href="#" class="nav-item" style="--i: 3">Contact</a>
+        <a href="#about" class="nav-item" style="--i: 0">Home</a>
+        <a href="#h-skills" class="nav-item" style="--i: 1">Hard Skills</a>
+        <a href="#skill" class="nav-item" style="--i: 2">Soft Skills</a>
+        <!-- <a href="#my-vid" class="nav-item" style="--i: 3">Contact</a> -->
+        <a href="#projs-id" class="nav-item" style="--i: 4">Projects</a>
       </nav>
     </header>
 
@@ -64,7 +65,7 @@
             <p class="sec1-about" id="hero-education" data-aos="fade-up"></p>
           </div>
           <div class="sec2" data-aos="fade-up">
-            <button class="btn-cv" id="btn-cv"></button>
+            <button class="btn-cv" id="btn-cv" ></button>
             <button class="btn-cm" id="btn-contact"></button>
           </div>
         </div>
@@ -937,12 +938,91 @@
     </div>
 
     <!-- Projects Section -->
-    <section class="proj-section">
+    <section id="projs-id" class="proj-section">
       <div class="proj-overlay"></div>
       <div class="proj-head">Projects</div>
       <div class="proj-card-container" id="projects-container">
         <!-- Projects will be populated here -->
       </div>
+    </section>
+
+
+    <section id="contact-me">
+      <div class="contact-container">
+        <div class="contact-form">
+          <div class="contact-contact-info">
+            <h3 class="contact-title">Let's get in touch</h3>
+            <p class="contact-text">
+              Contact me so that we can collaborate,enhance and build some ideas that will prove useful.
+            </p>
+      
+            <div class="contact-info">
+              <div class="contact-information">
+                <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
+                <p>House number 45 street 1 Model town</p>
+              </div>
+              <div class="contact-information">
+                <i class="fas fa-envelope"></i> &nbsp &nbsp
+                <p>Hamzaxpagal@gmail.com</p>
+              </div>
+              <div class="contact-information">
+                <i class="fas fa-phone"></i>&nbsp&nbsp
+                <p>+92 327 4562696</p>
+              </div>
+            </div>
+      
+            <div class="contact-social-media">
+              <p>Connect with us :</p>
+              <div class="contact-social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="contact-contact-form">
+            <span class="contact-circle one"></span>
+            <span class="contact-circle two"></span>
+      
+            <form action="index.html" autocomplete="off">
+              <h3 class="contact-title">Contact us</h3>
+              <div class="contact-input-container">
+                <input type="text" name="name" class="contact-input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="contact-input-container">
+                <input type="email" name="email" class="contact-input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="contact-input-container">
+                <input type="tel" name="phone" class="contact-input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="contact-input-container contact-textarea">
+                <textarea name="message" class="contact-input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send" class="contact-btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
     </section>
 
     <!-- Scripts -->
